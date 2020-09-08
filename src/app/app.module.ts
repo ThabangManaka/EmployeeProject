@@ -19,6 +19,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -26,7 +27,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 @NgModule({
   imports:[AppRoutingModule, BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ],
 
-  declarations: [ AppComponent, HelloComponent, DialogComponent, UpdateDialogComponent, EmployeeComponent, EmployeeListComponent ],
+  declarations: [ AppComponent, HelloComponent, DialogComponent, UpdateDialogComponent, EmployeeComponent, EmployeeListComponent, NavbarComponent ],
   entryComponents:[DialogComponent,UpdateDialogComponent],
    providers: [EmployeeService],
   bootstrap:    [ AppComponent ]
