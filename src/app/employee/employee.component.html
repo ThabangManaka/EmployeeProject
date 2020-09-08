@@ -1,3 +1,64 @@
-<p>
-employee works!
-</p>
+<mat-grid-list cols="2" rowHeight="450px">
+  <mat-grid-tile>
+        <div class="container">
+      <form #f="ngForm" (ngSubmit)="save(f.value)">
+        <div class="form-group">
+   <div class="row">
+         <div class="col-md-6">
+        
+    <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input #FirstName="ngModel" ngModel name="FirstName" matInput >
+  </mat-form-field>
+          </div>
+          <div class="col-md-6">
+         
+    <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input #LastName="ngModel"  ngModel name="LastName" matInput >
+  </mat-form-field>
+          </div>
+        
+        </div>
+       <div class="row">
+
+          <div class="col-md-6">
+          <mat-form-field appearance="fill">
+    <mat-label>Job title</mat-label>
+    <input  #Title="ngModel" ngModel name="Title" matInput >
+  </mat-form-field> 
+          </div>
+  <div class="col-md-6">
+<mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input #Age="ngModel"  ngModel name="Age" matInput type="number" class="example-right-align" >
+
+  </mat-form-field>
+  </div>
+       </div>
+         <div class="row">
+          <div class="col-md-6">
+             
+          <button mat-raised-button  type="submit" color="accent">
+          <i class="material-icons">save</i>
+          </button>
+          </div>
+        </div>
+      </div>   
+    
+      </form>
+   </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+     <mat-card *ngIf="FirstName.value" class="card">
+        <mat-card-content>
+       <h1>{{FirstName.value}} {{LastName.value}} </h1>
+    <p class="title">{{Title.value}}</p>
+    <p>
+      {{Age.value}}
+    </p>
+  </mat-card-content>
+     </mat-card>
+  </mat-grid-tile>
+
+</mat-grid-list>

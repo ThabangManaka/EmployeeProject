@@ -11,5 +11,8 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit() {
   }
+  save(employee) {
+    console.log(employee);
+  }
 
 }
