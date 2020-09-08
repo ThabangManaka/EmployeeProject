@@ -1,0 +1,24 @@
+/* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
+
+
+.basic-container {
+  padding: 5px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+.toolbar{
+    background-color:  #4B0082;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.toolbar-spacer{
+    flex: 1 1 auto;
+}

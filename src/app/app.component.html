@@ -1,0 +1,35 @@
+
+    <mat-toolbar class="toolbar">
+      <mat-card-title>Employee List</mat-card-title>
+      <span class="toolbar-spacer"></span>
+    <i  class="material-icons">add</i>
+ <button  mat-raised-button  (click)="onNavigateEmp()">
+    <i  class="material-icons">chevron_right</i>
+ </button>
+
+
+    </mat-toolbar>
+
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  EmployeList">
+
+    <mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+    <p class="title">{{Employee.Title}}</p>
+    <p>
+      {{Employee.Age}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button class="footBtn" color="accent" (click)="updateDialog(Employee.Id)">Update</button>
+
+      <button mat-raised-button class="footBtn" (click)="openDialog(Employee)" color="warn">Delete</button>
+  </mat-card-actions>
+</mat-card>
+
+  </mat-grid-tile>
+</mat-grid-list>
+
+<router-outlet></router-outlet>

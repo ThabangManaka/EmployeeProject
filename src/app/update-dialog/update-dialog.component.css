@@ -1,0 +1,16 @@
+
+h2 {
+    font-family: 'permanent Marker', cursive;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+}
+mat-toolbar {
+  margin-bottom: 20px;
+}
+form {
+  text-align: center
+}
+.empBtn {
+  
+}
