@@ -3,7 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700');
 
-
+*{
+  margin:0;
+}
 .basic-container {
   padding: 5px;
 }

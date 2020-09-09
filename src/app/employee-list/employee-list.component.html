@@ -7,12 +7,12 @@
   <mat-card-content>
        <h1>{{Employee.FirstName}} {{Employee.LastName }} <span>({{Employee.Age}})  </span> </h1>
     <p class="title">{{Employee.Title}}</p>
-  
+    <p class="department">{{Employee.Department}} </p>
   </mat-card-content>
-  <mat-action-row>
-    <button mat-raised-button class="footBtn" color="accent" (click)="updateDialog(Employee.Id)">Update</button>
+  <mat-action-row class="BtnContainer">
+    <button mat-raised-button  color="accent" (click)="updateDialog(Employee.Id)">Update</button>
 
-      <button mat-raised-button class="footBtn" (click)="openDialog(Employee)" color="warn">Delete</button>
+      <button mat-raised-button class="deleteBtn" (click)="openDialog(Employee)" color="warn">Delete</button>
   </mat-action-row>
 </mat-card>
 

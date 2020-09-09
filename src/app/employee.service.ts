@@ -4,8 +4,8 @@ import { EmployeeClass } from './employee';
 @Injectable()
 export class EmployeeService {
  _employeeList: EmployeeClass[] =   [{Id:1,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer", Department:"Sales", Age:21, img:"https://us.123rf.com/450wm/sam74100/sam741001503/sam74100150300105/38081251-portrait-of-a-young-african-american-business-woman-black-people.jpg?ver=6" },
-    {Id:2,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Department:"Sales", Age:24, img: "https://www.talk-business.co.uk/wp-content/uploads/2019/02/shutterstock_563534299.jpg"}, 
-    {Id:3,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer",Department:"Sales", Age:21, img:"https://jobstars.com/wp-content/uploads/2018/08/girl-1868930_1280.jpg" }, 
+    {Id:2,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Department:"Health", Age:24, img: "https://www.talk-business.co.uk/wp-content/uploads/2019/02/shutterstock_563534299.jpg"}, 
+    {Id:3,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer",Department:"Educati", Age:21, img:"https://jobstars.com/wp-content/uploads/2018/08/girl-1868930_1280.jpg" }, 
     {Id:4,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst",Department:"Logistic", Age:24, img: "https://blackeoejournal.com/wp-content/uploads/2019/12/confident-black-woman.jpg"},
     {Id:5,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer",Department:"Operations", Age:21, img:"https://images.assetsdelivery.com/compings_v2/michaeljung/michaeljung1302/michaeljung130200277.jpg" },
     {Id:6,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst",Department:"Sales", Age:24, img: "https://us.123rf.com/450wm/francesco83/francesco831502/francesco83150200037/36350352-photo-of-african-smiling-businessman-standing-next-to-the-glass-wall.jpg?ver=6"},
