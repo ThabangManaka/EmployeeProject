@@ -13,6 +13,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatExpansionModule} from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
 import { EmployeeService } from './employee.service';
 import { EmployeeComponent } from './employee/employee.component';
@@ -25,7 +26,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
-  imports:[AppRoutingModule, BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ],
+  imports:[AppRoutingModule, BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule,MatExpansionModule ],
 
   declarations: [ AppComponent, HelloComponent, DialogComponent, UpdateDialogComponent, EmployeeComponent, EmployeeListComponent, NavbarComponent ],
   entryComponents:[DialogComponent,UpdateDialogComponent],

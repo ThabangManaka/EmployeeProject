@@ -5,17 +5,15 @@
     <mat-card class="card">
   <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
-       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+       <h1>{{Employee.FirstName}} {{Employee.LastName }} <span>({{Employee.Age}})  </span> </h1>
     <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
+  
   </mat-card-content>
-  <mat-card-actions>
+  <mat-action-row>
     <button mat-raised-button class="footBtn" color="accent" (click)="updateDialog(Employee.Id)">Update</button>
 
       <button mat-raised-button class="footBtn" (click)="openDialog(Employee)" color="warn">Delete</button>
-  </mat-card-actions>
+  </mat-action-row>
 </mat-card>
 
   </mat-grid-tile>
