@@ -3,6 +3,7 @@ export interface EmployeeClass {
     FirstName: string;
     LastName: string;
     Title: string;
+    Department: string;
     Age:number;
     img: string;
 }
