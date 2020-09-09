@@ -6,9 +6,9 @@
   transition: transform 100ms ease-in;
   cursor: pointer;
 }
-/* .card:hover {
+.card:hover {
   transform: scale(1.07);
-} */
+} 
 .mat-card  img {
   object-fit: fill;
   min-width: 300px;
@@ -74,7 +74,12 @@ p {
     position: relative;
     overflow: hidden;
 }
-
+.deleteBtn:hover {
+  background-color: #f44336;
+}
+.updateBtn:hover {
+background-color:#ffd740;
+}
 /* .card:hover img{
   transform: scale(1.2);
 } */
