@@ -5,3 +5,6 @@ mat-toolbar i {
 .btnAdd:hover{
   background-color: #228B22
 }
+.project {
+  font-size: 40px;
+}

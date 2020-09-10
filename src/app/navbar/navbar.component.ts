@@ -14,8 +14,8 @@ export class NavbarComponent implements OnInit {
   }
   onNavigateEmp() {
     this.router.navigate(['/employee']);
-    //this.router.navigateByUrl('/employee')
-    
   }
-  
+  onNavigateProject() {
+      this.router.navigate(['/projects']);
+  }
 }

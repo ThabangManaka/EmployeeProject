@@ -21,6 +21,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectService } from './project.service';
+import {DatePipe} from '@angular/common';
 
 
 
@@ -28,9 +31,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   imports:[AppRoutingModule, BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule,MatExpansionModule ],
 
-  declarations: [ AppComponent, HelloComponent, DialogComponent, UpdateDialogComponent, EmployeeComponent, EmployeeListComponent, NavbarComponent ],
+  declarations: [ AppComponent, HelloComponent, DialogComponent, UpdateDialogComponent, EmployeeComponent, EmployeeListComponent, NavbarComponent, ProjectsComponent ],
   entryComponents:[DialogComponent,UpdateDialogComponent],
-   providers: [EmployeeService],
+   providers: [EmployeeService, ProjectService,DatePipe],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -1,0 +1,18 @@
+
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Project of  ProjectList">
+
+    <mat-card class="card">
+
+  <mat-card-content>
+       <h1>{{Project.Name}} </h1>
+      <p>{{Project.Description}}  </p>
+    <p class="title">{{Project.ProjectDate | date: 'dd/MM/yyyy'}}</p>
+<p class="department">{{Project.ImplemntingDepartment}} </p>
+                           
+  </mat-card-content>
+
+</mat-card>
+
+  </mat-grid-tile>
+</mat-grid-list>
