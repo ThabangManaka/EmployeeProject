@@ -3,11 +3,12 @@
   <mat-grid-tile *ngFor="let Project of  ProjectList">
 
     <mat-card class="card">
-
+ <h1>{{Project.Name}} </h1> 
+     <p class="title">{{Project.ProjectDate | date: 'dd/MM/yyyy'}}</p>
   <mat-card-content>
-       <h1>{{Project.Name}} </h1>
-      <p>{{Project.Description}}  </p>
-    <p class="title">{{Project.ProjectDate | date: 'dd/MM/yyyy'}}</p>
+      
+      <p class="description">{{Project.Description}}  </p>
+
 <p class="department">{{Project.ImplemntingDepartment}} </p>
                            
   </mat-card-content>
