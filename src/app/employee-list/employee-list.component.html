@@ -3,7 +3,7 @@
   <mat-grid-tile *ngFor="let Employee of  EmployeList">
 
     <mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <img class="img-container"  mat-card-image [src]="Employee.img" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
        <h1>{{Employee.FirstName}} {{Employee.LastName }} <span>({{Employee.Age}})  </span> </h1>
     <p class="title">{{Employee.Title}}</p>
@@ -12,7 +12,7 @@
   <mat-action-row class="BtnContainer">
     <button mat-raised-button class="updateBtn"  (click)="updateDialog(Employee.Id)">Update</button>
 
-      <button mat-raised-button class="deleteBtn" (click)="openDialog(Employee)" >Delete</button>
+      <button mat-raised-button class="deleteBtn" (click)="openDialog(Employee.Id)" >Delete</button>
   </mat-action-row>
 </mat-card>
 

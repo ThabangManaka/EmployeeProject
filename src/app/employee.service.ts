@@ -22,11 +22,20 @@ getAllEmployee() {
 
 updateEmployee(emp: EmployeeClass) {
     const index = this. _employeeList.findIndex(c => c.Id === emp.Id);
+     if ( index  >-1) {
     this. _employeeList[index] = emp;
+     }
   }
 
   addEmployeee(emp: EmployeeClass) {
      emp.Id = this._employeeList.length + 1;
      this._employeeList.push(emp);
+  }
+  deleteEmployee(id: number) {
+    const emp = this._employeeList.findIndex(c => c.Id == id);
+     if (emp >-1) {
+    this._employeeList.splice(emp,1);
+
+  }
   }
 }

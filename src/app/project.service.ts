@@ -12,7 +12,7 @@ export class ProjectService {
      {Id:7,Name:"Lesotho Highlands", Description: "is an ongoing water supply project with a hydropower component, developed in partnership between the governments of Lesotho and South Africa", ProjectDate: new Date(12,12,2007), ImplemntingDepartment:"Water & Sanitation"},
       {Id:8,Name:"Culinary", Description: "Culinary Equipment Company  is your source for the best industrial kitchen & catering equipment, with a wide range of world-class.", ProjectDate: new Date(2019,9,3), ImplemntingDepartment:"Agriculture"},
        {Id:9,Name:"SweepSouth", Description: "SweepSouth is bringing harmony to homes across South Africa with a fresh approach to home cleaning services", ProjectDate: new Date(2010,5,6), ImplemntingDepartment:"cleaning"},
-        {Id:10,Name:"Stefanutti Stocks", Description: "is one of South Africa’s leading construction companies with a capacity to deliver a range of projects of any scale to a multitude of clients.", ProjectDate: new Date(2010,11,), ImplemntingDepartment:"Mining and Infrastructure"},]
+        {Id:10,Name:"Stefanutti Stocks", Description: "is one of South Africa’s leading construction companies with a capacity to deliver a range of projects of any scale to a multitude of clients.", ProjectDate: new Date(2010,11,12), ImplemntingDepartment:"Mining and Infrastructure"},]
   constructor() { }
 
 getAllProject() {

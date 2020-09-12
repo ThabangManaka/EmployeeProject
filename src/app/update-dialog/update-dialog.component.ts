@@ -14,7 +14,7 @@ export class UpdateDialogComponent implements OnInit {
    message: string = "Employee Details"
     public _contactForm: FormGroup;
 
-  constructor( private _formBuilder: FormBuilder,@Inject(MAT_DIALOG_DATA) private data: any,
+  constructor( private _formBuilder: FormBuilder,@Inject(MAT_DIALOG_DATA) public data: any,
    private dialogRef: MatDialogRef<UpdateDialogComponent>,
    private _employeeService: EmployeeService 
    ) {
@@ -32,7 +32,9 @@ export class UpdateDialogComponent implements OnInit {
       FirstName: [ this.data.FirstName, [Validators.required]],
       LastName: [ this.data.LastName, [Validators.required]],
        Title: [ this.data.Title, [Validators.required]],
+       Department: [this.data.Department,[Validators.required]],
       Age: [ this.data.Age, [Validators.required]],
+      img: [this.data.img]
     });
 
 
@@ -40,7 +42,7 @@ export class UpdateDialogComponent implements OnInit {
 
 
  onSubmit() {
-     console.log(this._contactForm.value.ID);
+     console.log(this._contactForm.value);
      this._employeeService.updateEmployee(this._contactForm.value);
   
    // this.data.employee.FirstName =  this.data.employee.FirstName;
